@@ -3,6 +3,7 @@ import tkinter.ttk as ttk
 
 from src.shared.utils import center_window_on_screen, center_window_on_master
 from src.shared.constant import ResolutionDict, StyleDict, RTLStyle
+from src.shared.settings import resources_dir
 
 
 
@@ -20,6 +21,8 @@ class MainView(tk.Tk):
     
     def setup_view(self):
         self.title("HManagerPy")
+        self.app_icon = tk.PhotoImage(file = resources_dir / "icons/app_24.png")
+        self.wm_iconphoto(True, self.app_icon)
         self.minsize(*ResolutionDict.get("HD"))
         self.columnconfigure(0,weight=1)
         self.rowconfigure(1,weight=1)

@@ -1,0 +1,625 @@
+# Arabic (Saudi Arabia) translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-05-01 10:31+0300\n"
+"PO-Revision-Date: 2024-04-30 11:50+0300\n"
+"Last-Translator: \n"
+"Language: ar_SA\n"
+"Language-Team: ar_SA <LL@li.org>\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: src/main/controller.py:111 src/main/navbar.py:41
+msgid "Settings"
+msgstr "الإعدادات"
+
+#: src/main/controller.py:125 src/main/navbar.py:45
+msgid "About"
+msgstr "حول البرنامج"
+
+#: src/main/navbar.py:25
+msgid "Signal"
+msgstr "الإشارة"
+
+#: src/main/navbar.py:29
+msgid "Band Select"
+msgstr "اختيار النطاق"
+
+#: src/main/navbar.py:33
+msgid "SMS"
+msgstr "الرسائل النصية"
+
+#: src/main/navbar.py:37
+msgid "Advance"
+msgstr "متقدم"
+
+#: src/pages/advance/view.py:27
+msgid "Get"
+msgstr "معلومات"
+
+#: src/pages/advance/view.py:32
+msgid "Set"
+msgstr "الضبط"
+
+#: src/pages/advance/tabs/get/controller.py:37
+msgid "Internet connection will reset. Continue?"
+msgstr "سيتم إعادة تعيين الاتصال بالإنترنت. هل ترغب في المتابعة؟"
+
+#: src/pages/advance/tabs/get/view.py:49
+msgid "Name"
+msgstr "الاسم"
+
+#: src/pages/advance/tabs/get/view.py:50
+msgid "Value"
+msgstr "القيمة"
+
+#: src/pages/advance/tabs/get/view.py:137 src/pages/sms/view.py:113
+msgid "Exit"
+msgstr "خروج"
+
+#: src/pages/advance/tabs/set/controller.py:37
+msgid "The device will shutdown. Continue??"
+msgstr "سيتم إيقاف تشغيل الجهاز. هل ترغب في المتابعة؟"
+
+#: src/pages/advance/tabs/set/controller.py:40
+msgid "The device will restart. Continue?"
+msgstr "سيتم إعادة تشغيل الجهاز. هل ترغب في المتابعة؟"
+
+#: src/pages/advance/tabs/set/controller.py:43
+msgid "All configurations will be restored to factory settings. Continue?"
+msgstr "سيتم استعادة إعدادات المصنع. هل ترغب في المتابعة؟"
+
+#: src/pages/advance/tabs/set/controller.py:54
+msgid "Apply dns settings. Continue?"
+msgstr "تطبيق الإعدادات. هل ترغب في المتابعة؟"
+
+#: src/pages/advance/tabs/set/controller.py:61
+msgid "Reset dns settings. Continue?"
+msgstr "إعادة تعيين الإعدادات. هل ترغب في المتابعة؟"
+
+#: src/pages/advance/tabs/set/view.py:27
+msgid "Power"
+msgstr "الطاقة"
+
+#: src/pages/advance/tabs/set/view.py:30
+msgid "ShutDown"
+msgstr "إيقاف التشغيل"
+
+#: src/pages/advance/tabs/set/view.py:33
+msgid "Restart"
+msgstr "إعادة التشغيل"
+
+#: src/pages/advance/tabs/set/view.py:36 src/pages/advance/tabs/set/view.py:63
+msgid "Reset"
+msgstr "إعادة الضبط"
+
+#: src/pages/advance/tabs/set/view.py:44
+msgid "DNS"
+msgstr "DNS"
+
+#: src/pages/advance/tabs/set/view.py:49
+#: src/pages/settings/tabs/connection/view.py:32
+msgid "IP"
+msgstr "عنوان الآي بي"
+
+#: src/pages/advance/tabs/set/view.py:53
+msgid "Primary"
+msgstr "أساسي"
+
+#: src/pages/advance/tabs/set/view.py:57
+msgid "Secondary"
+msgstr "ثانوي"
+
+#: src/pages/advance/tabs/set/view.py:60 src/pages/bandselect/view.py:179
+msgid "Apply"
+msgstr "تطبيق"
+
+#: src/pages/bandselect/controller.py:90
+msgid "Apply band settings. Continue?"
+msgstr "تطبيق إعدادات النطاق. هل ترغب في المتابعة؟"
+
+#: src/pages/bandselect/controller.py:94
+msgid "Choose at least one lte band!"
+msgstr "اختر نطاق واحد على الأقل"
+
+#: src/pages/bandselect/view.py:28 src/pages/bandselect/view.py:52
+msgid "Network Mode"
+msgstr "وضع الشبكة"
+
+#: src/pages/bandselect/view.py:32 src/pages/bandselect/view.py:68
+msgid "Network Band"
+msgstr "نطاق الشبكة"
+
+#: src/pages/bandselect/view.py:36
+msgid "LTE band"
+msgstr "LTE نطاق"
+
+#: src/pages/bandselect/view.py:60 src/pages/bandselect/view.py:76
+#: src/pages/bandselect/view.py:91
+msgid "Auto"
+msgstr "Auto"
+
+#: src/pages/bandselect/view.py:61
+msgid "4G only"
+msgstr "4G only"
+
+#: src/pages/bandselect/view.py:62
+msgid "NR"
+msgstr "NR"
+
+#: src/pages/bandselect/view.py:82
+msgid "LTE Band"
+msgstr "LTE نطاق"
+
+#: src/pages/bandselect/view.py:92
+msgid "Manual"
+msgstr "يدوي"
+
+#: src/pages/bandselect/view.py:159
+msgid "Band Hint"
+msgstr "تلميح النطاقات"
+
+#: src/pages/bandselect/view.py:167
+msgid "None"
+msgstr "بدون"
+
+#: src/pages/bandselect/view.py:168
+msgid "STC"
+msgstr "الاتصالات السعودية"
+
+#: src/pages/bandselect/view.py:169
+msgid "Mobily"
+msgstr "موبايلي"
+
+#: src/pages/bandselect/view.py:170
+msgid "Zain"
+msgstr "زين"
+
+#: src/pages/bandselect/view.py:182
+msgid "Clear"
+msgstr "مسح"
+
+#: src/pages/settings/view.py:37
+msgid "Connection"
+msgstr "الاتصال"
+
+#: src/pages/settings/tabs/language/view.py:21 src/pages/settings/view.py:42
+msgid "Language"
+msgstr "اللغة"
+
+#: src/pages/settings/view.py:47
+msgid "UI"
+msgstr "واجهة المستخدم"
+
+#: src/pages/settings/view.py:61
+msgid "Save"
+msgstr "حفظ"
+
+#: src/pages/settings/tabs/connection/view.py:37
+msgid "USER"
+msgstr "اسم المستخدم"
+
+#: src/pages/settings/tabs/connection/view.py:42
+msgid "PASSWORD"
+msgstr "كلمة المرور"
+
+#: src/pages/settings/tabs/connection/view.py:48
+msgid "Show Pass"
+msgstr "إظهار كلمة المرور"
+
+#: src/pages/settings/tabs/connection/view.py:52
+msgid "Keep Connection"
+msgstr "البقاء متصل"
+
+#: src/pages/settings/tabs/connection/view.py:54
+msgid "Auto login after 5min"
+msgstr "تسجيل الدخول بشكل تلقائي بعد مرور  ٥ دقائق"
+
+#: src/pages/settings/tabs/language/view.py:29
+msgid "English"
+msgstr "الإنجليزية"
+
+#: src/pages/settings/tabs/language/view.py:31
+msgid "Arabic"
+msgstr "العربية"
+
+#: src/pages/settings/tabs/language/view.py:38
+msgid "Layout Direction"
+msgstr "اتجاه التخطيط"
+
+#: src/pages/settings/tabs/language/view.py:46
+msgid "Left to Right"
+msgstr "اليسار إلى اليمين"
+
+#: src/pages/settings/tabs/language/view.py:48
+msgid "Right to Left"
+msgstr "اليمين إلى اليسار"
+
+#: src/pages/settings/tabs/ui/view.py:21
+msgid "Mode"
+msgstr "الوضع"
+
+#: src/pages/settings/tabs/ui/view.py:29
+msgid "NR-5G"
+msgstr "5G إشارة"
+
+#: src/pages/settings/tabs/ui/view.py:35
+msgid "Graph"
+msgstr "الرسوم البيانية"
+
+#: src/pages/settings/tabs/ui/view.py:43
+msgid "RSRQ"
+msgstr "جودة الإشارة"
+
+#: src/pages/settings/tabs/ui/view.py:46
+msgid "RSRP"
+msgstr "قوة الإشارة"
+
+#: src/pages/settings/tabs/ui/view.py:49
+msgid "SINR"
+msgstr "إشارة / تشويش"
+
+#: src/pages/settings/tabs/ui/view.py:52
+msgid "Download & Upload"
+msgstr "سرعة التنزيل و الرفع"
+
+#: src/pages/signal/task.py:80
+msgid "login required"
+msgstr "يجب تسجيل الدخول"
+
+#: src/pages/signal/view.py:31
+msgid "Monitor"
+msgstr "مراقبة"
+
+#: src/pages/signal/view.py:36
+msgid "Statistics"
+msgstr "الإحصاءات"
+
+#: src/pages/signal/view.py:46
+msgid "start"
+msgstr "ابدأ"
+
+#: src/pages/signal/view.py:50
+msgid "stop"
+msgstr "توقف"
+
+#: src/pages/signal/tabs/monitor/controller.py:277
+msgid "connecting"
+msgstr "جار الاتصال"
+
+#: src/pages/signal/tabs/monitor/controller.py:277
+msgid "connected"
+msgstr "متصل"
+
+#: src/pages/signal/tabs/monitor/controller.py:277
+msgid "disconnected"
+msgstr "غير متصل"
+
+#: src/pages/signal/tabs/monitor/controller.py:277
+msgid "no connection"
+msgstr "لا يوجد اتصال"
+
+#: src/pages/signal/tabs/monitor/controller.py:277
+msgid "connection error"
+msgstr "خطأ في الاتصال"
+
+#: src/pages/signal/tabs/monitor/controller.py:278
+msgid "restricted"
+msgstr "غير متصل"
+
+#: src/pages/signal/tabs/monitor/controller.py:278
+msgid "unrestricted"
+msgstr "متصل"
+
+#: src/pages/signal/tabs/monitor/view.py:58
+msgid "Network"
+msgstr "الشبكة"
+
+#: src/pages/signal/tabs/monitor/view.py:63
+msgid "FullName"
+msgstr "مزود الخدمة"
+
+#: src/pages/signal/tabs/monitor/view.py:69
+msgid "LTE 4G"
+msgstr "4G إشارة"
+
+#: src/pages/signal/tabs/monitor/view.py:74
+msgid "rsrq"
+msgstr "جودة الإشارة"
+
+#: src/pages/signal/tabs/monitor/view.py:78
+#: src/pages/signal/tabs/monitor/view.py:122
+msgid "signal qualty"
+msgstr "جودة الإشارة"
+
+#: src/pages/signal/tabs/monitor/view.py:79
+#: src/pages/signal/tabs/monitor/view.py:123
+msgid "-20 to 0, lower is better"
+msgstr "من -٢٠ إلى ٠، الأقل هو الأفضل"
+
+#: src/pages/signal/tabs/monitor/view.py:81
+msgid "rsrp"
+msgstr "قوة الإشارة"
+
+#: src/pages/signal/tabs/monitor/view.py:85
+#: src/pages/signal/tabs/monitor/view.py:129
+msgid "signal power"
+msgstr "قوة الإشارة"
+
+#: src/pages/signal/tabs/monitor/view.py:86
+#: src/pages/signal/tabs/monitor/view.py:130
+msgid "-90 to -70, lower is better"
+msgstr "من -٩٠ إلى -٧٠، الأقل هو الأفضل"
+
+#: src/pages/signal/tabs/monitor/view.py:88
+msgid "sinr"
+msgstr "إشارة / تشويش"
+
+#: src/pages/signal/tabs/monitor/view.py:92
+#: src/pages/signal/tabs/monitor/view.py:136
+msgid "signal to noise ratio"
+msgstr "نسبة الإشارة الى التشويش"
+
+#: src/pages/signal/tabs/monitor/view.py:93
+#: src/pages/signal/tabs/monitor/view.py:137
+msgid "0 to 20, higher is better"
+msgstr "من ٠ إلى ٢٠، الأعلى هو الأفضل"
+
+#: src/pages/signal/tabs/monitor/view.py:95
+msgid "txpower"
+msgstr "طاقة الإرسال"
+
+#: src/pages/signal/tabs/monitor/view.py:99
+msgid "band"
+msgstr "النطاق"
+
+#: src/pages/signal/tabs/monitor/view.py:103
+msgid "dlbandwidth"
+msgstr "عرض النطاق"
+
+#: src/pages/signal/tabs/monitor/view.py:107
+msgid "rssi"
+msgstr "معدل الإشارة"
+
+#: src/pages/signal/tabs/monitor/view.py:113
+msgid "NR 5G"
+msgstr "5G إشارة"
+
+#: src/pages/signal/tabs/monitor/view.py:118
+msgid "nrrsrq"
+msgstr "جودة الإشارة"
+
+#: src/pages/signal/tabs/monitor/view.py:125
+msgid "nrrsrp"
+msgstr "قوة الإشارة"
+
+#: src/pages/signal/tabs/monitor/view.py:132
+msgid "nrsinr"
+msgstr "إشارة / تشويش"
+
+#: src/pages/signal/tabs/monitor/view.py:139
+msgid "nrtxpower"
+msgstr "طاقة الإرسال"
+
+#: src/pages/signal/tabs/monitor/view.py:143
+msgid "nrband"
+msgstr "النطاق"
+
+#: src/pages/signal/tabs/monitor/view.py:147
+msgid "nrdlbandwidth"
+msgstr "عرض النطاق"
+
+#: src/pages/signal/tabs/monitor/view.py:151
+msgid "mode"
+msgstr "المود"
+
+#: src/pages/signal/tabs/monitor/view.py:157
+msgid "LTE Tower"
+msgstr "معلومات البرج"
+
+#: src/pages/signal/tabs/monitor/view.py:164
+msgid "pci"
+msgstr "البرج"
+
+#: src/pages/signal/tabs/monitor/view.py:168
+msgid "physical cell id"
+msgstr "physical cell id"
+
+#: src/pages/signal/tabs/monitor/view.py:170
+msgid "cid"
+msgstr "السكتور"
+
+#: src/pages/signal/tabs/monitor/view.py:175
+msgid "sector id"
+msgstr "sector id"
+
+#: src/pages/signal/tabs/monitor/view.py:176
+msgid "cid=(eci-(256*endB))"
+msgstr "cid=(eci-(256*endB))"
+
+#: src/pages/signal/tabs/monitor/view.py:179
+msgid "Connection and Endc"
+msgstr "الاتصال و الاتصال الثنائي"
+
+#: src/pages/signal/tabs/monitor/view.py:186
+msgid "connectionstatus"
+msgstr "حالة الاتصال"
+
+#: src/pages/signal/tabs/monitor/view.py:191
+msgid "endcstatus"
+msgstr "حالة الاتصال الثنائي"
+
+#: src/pages/signal/tabs/monitor/view.py:196
+msgid "SignalIcon"
+msgstr "4G تغطية"
+
+#: src/pages/signal/tabs/monitor/view.py:200
+msgid "SignalIconNr"
+msgstr "5G تغطية"
+
+#: src/pages/signal/tabs/monitor/view.py:204
+msgid "CurrentNetworkType"
+msgstr "نوع الشبكة"
+
+#: src/pages/signal/tabs/monitor/view.py:208
+msgid "CurrentNetworkTypeEx"
+msgstr "نوع الشبكة 2"
+
+#: src/pages/signal/tabs/statistics/view.py:32
+msgid "CurrentDownload"
+msgstr "التنزيل الحالي"
+
+#: src/pages/signal/tabs/statistics/view.py:36
+msgid "CurrentUpload"
+msgstr "الرفع الحالي"
+
+#: src/pages/signal/tabs/statistics/view.py:40
+msgid "CurrentConnectTime"
+msgstr "مدة الاتصال الحالي"
+
+#: src/pages/signal/tabs/statistics/view.py:48
+msgid "TotalDownload"
+msgstr "إجمالي التنزيل"
+
+#: src/pages/signal/tabs/statistics/view.py:52
+msgid "TotalUpload"
+msgstr "إجمالي الرفع"
+
+#: src/pages/signal/tabs/statistics/view.py:56
+msgid "TotalConnectTime"
+msgstr "إجمالي مدة الاتصال"
+
+#: src/pages/signal/tabs/statistics/view.py:64
+msgid "CurrentDownloadRate"
+msgstr "سرعة التنزيل"
+
+#: src/pages/signal/tabs/statistics/view.py:68
+msgid "CurrentUploadRate"
+msgstr "سرعة الرفع"
+
+#: src/pages/signal/tabs/statistics/view.py:84
+msgid "Download Mb"
+msgstr "Download Mb"
+
+#: src/pages/signal/tabs/statistics/view.py:89
+msgid "Upload Mb"
+msgstr "Upload Mb"
+
+#: src/pages/sms/controller.py:72
+msgid "Send SMS. Continue?"
+msgstr "إرسال رسالة نصية. هل ترغب في المتابعة؟"
+
+#: src/pages/sms/controller.py:79
+msgid "The Number\\s or Message is empty!"
+msgstr "حقل الرقم او الرسالة فارغ"
+
+#: src/pages/sms/controller.py:83
+msgid "Message length cannot exceed 160 characters!"
+msgstr "طول الرسالة لا يمكن أن يتجاوز 160 حرفًا"
+
+#: src/pages/sms/view.py:23
+msgid "New SMS"
+msgstr "رسالة جديدة"
+
+#: src/pages/sms/view.py:39
+msgid "Inbox"
+msgstr "صندوق الوارد"
+
+#: src/pages/sms/view.py:41
+msgid "Outbox"
+msgstr "صندوق الصادر"
+
+#: src/pages/sms/view.py:56
+msgid "Contacts"
+msgstr "جهات الاتصال"
+
+#: src/pages/sms/view.py:57
+msgid "Content"
+msgstr "المحتوى"
+
+#: src/pages/sms/view.py:58
+msgid "Date"
+msgstr "التاريخ"
+
+#: src/pages/sms/view.py:74
+msgid "use ; to separate more than one number"
+msgstr "استخدم ; لفصل أكثر من رقم"
+
+#: src/pages/sms/view.py:75
+msgid "Number\\s"
+msgstr "الأرقام"
+
+#: src/pages/sms/view.py:84
+msgid "Send"
+msgstr "إرسال"
+
+#: src/shared/connection.py:26
+msgid "IP or User or Password is empty!"
+msgstr "عنوان الآي بي أو اسم المستخدم أو كلمة المرور فارغة"
+
+#: src/shared/connection.py:29
+msgid "Username or Password is wrong!"
+msgstr "اسم المستخدم أو كلمة المرور غير صحيحة"
+
+#: src/shared/connection.py:32
+msgid "Password is overrun wait a few minutes."
+msgstr "تم تجاوز حد إدخال كلمة المرور. الرجاء المحاولة بعد بضع دقائق"
+
+#: src/shared/connection.py:35
+msgid "Request timed out while trying to connect."
+msgstr "انتهت مهلة الطلب أثناء محاولة الاتصال"
+
+#: src/shared/connection.py:38
+msgid "Connect Error!"
+msgstr "خطأ في الاتصال\""
+
+#: src/shared/utils.py:61
+msgid "Error"
+msgstr "خطأ"
+
+#: src/shared/utils.py:63
+msgid "Info"
+msgstr "معلومة"
+
+#: src/shared/utils.py:65
+msgid "Response"
+msgstr "الرد"
+
+#: src/shared/utils.py:67
+msgid "Confirm"
+msgstr "تأكيد"
+
+#: src/shared/settings/settings.py:39
+msgid "Settings file does not exist!"
+msgstr "ملف الإعدادات غير موجود"
+
+#: src/shared/settings/settings.py:50
+msgid "Settings file invalid!"
+msgstr "ملف الإعدادات غير صالح"
+
+#: src/shared/settings/settings.py:56
+msgid "Settings file error!"
+msgstr "خطأ في ملف الإعدادات"
+
+#: src/shared/settings/validator.py:28 src/shared/settings/validator.py:30
+msgid "Connection settings invalid!"
+msgstr "إعدادات الاتصال غير صالحة"
+
+#: src/shared/settings/validator.py:47 src/shared/settings/validator.py:49
+msgid "Language settings invalid!"
+msgstr "إعدادات اللغة غير صالحة"
+
+#: src/shared/settings/validator.py:78 src/shared/settings/validator.py:80
+msgid "UI settings invalid!"
+msgstr "إعدادات واجهة المستخدم غير صالحة"
+

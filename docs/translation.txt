@@ -1,0 +1,13 @@
+# 1- extract text 
+pybabel extract src\ -o src\resources\locale\base.pot -sc tr_note --ignore-dirs=venv
+
+  # create new lang
+  pybabel init -i src\resources\locale\base.pot -l <<lang>> -d src\resources\locale
+
+
+# 2- update .po
+pybabel update -i src\resources\locale\base.pot -d src\resources\locale
+
+
+# 3- compile .mo 
+pybabel compile -d src\resources\locale

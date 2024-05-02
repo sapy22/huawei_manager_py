@@ -1,0 +1,308 @@
+view-source:http://192.168.8.1/api/device/signal
+tower info
+    -pci    (Physical Cell Identity)
+    -cell_id/ci/ECI __(eci=(256*endB)+sector)__ (ECI= E-UTRAN Cell Identifier-identify a Cell within a PLMN)
+    -enodeb_id (evolved NodeB IDentifier- identify an eNodeB uniquely within a PLMN)
+    -cellid/cid/sector_id __(cid=(eci-(256*endB)))__
+
+    -transmode
+    -tac (Tracking Area Code)
+    -plmn (Public Land Mobile Network Identifier = MCC+MNC)(MCC—Mobile Country Code / MNC-Mobile Network Code)
+
+4g info
+    -rsrq (Reference Signal Received Quality)(the ratio of the carrier power to the interference power, = signal-noise ratio )(quality of the received signal, and its range is typically -19.5dB(bad) to -3dB (good).)
+    -rsrp (Reference Signal Received Power)(measured power of the LTE reference signals spread across the broadband and narrowband portions of the spectrum)(The average power received from a single Reference signal, and Its typical range is around -44dbm (good) to -140dbm(bad))
+    -sinr (The signal-to-noise ratio of the given signal)
+    -txpower (PPusch:Physical uplink shared channel, PPucch:Physical uplink control channel,
+              PSrs:Periodic Sounding Reference Signal , PPrach:physical random access channel)
+
+    -band (main band, also upload band)
+    -ltedlfreq
+    -lteulfreq
+    -earfcn (E-UTRA Absolute Radio Frequency Channel Number)
+    -dlbandwidth
+    -ulbandwidth
+    -rssi (Received Signal Strength Indicator)( Represents the entire received power including the wanted power from the serving cell as well as all co-channel power and other sources of noise)(RSRQ=N*(RSRP/RSSI) - Where N is the number of Resource Blocks of the E-UTRA carrier RSSI measurement bandwidth.)
+
+5g info
+    -nrrsrq
+    -nrrsrp
+    -nrsinr
+    -nrtxpower
+
+    -nrband
+    -nrdlfreq
+    -nrulfreq
+    -nrearfcn
+    -nrdlbandwidth
+    -nrulbandwidth
+
+NR-ARFCN Calculation:
+NREF = NREF-Offs +  (FREF – FREF-Offs) / FGlobal
+
+if Frequency range	0 – 3000 MHz
+    NREF = 0 + (((Frequency - 0) /5 ) * 1000)
+
+if Frequency range	3000 – 24250 MHz
+    NREF = 600000 + (((Frequency - 3000) /15 ) *1000)
+
+if Frequency range	24250 – 100000 MHz
+    NREF = 2016667 + (((Frequency - 24250) /60 ) *1000 )
+
+########################################################################################################################
+view-source:http://192.168.8.1/api/monitoring/status
+connction info
+    -ConnectionStatus (look up data_info)
+    -SignalIcon (0 to 5)
+    -SignalIconNr (0 to 5)
+    -CurrentNetworkType (look up data_info)
+    -CurrentNetworkTypeEx (look up data_info)
+UE/5G Access
+    -EndcStatus (1 = NR Dual Connectivity is on ,, 0 = off )(NSA on/off)( 4G-5G Nework Dual Connectivity)(UE/tower/band support DC or not)
+    -endcRestrictedStatus (0/false = unrestricted access  ,, 1/true = restricted )(UE blocked or not)
+
+
+
+
+########################################################################################################################
+view-source:http://192.168.8.1/api/net/net-mode
+-NetworkMode
+-NetworkBand
+-LTEBand
+
+########################################################################################################################
+view-source:http://192.168.8.1/api/net/current-plmn
+network info
+    -FullName
+    -Numeric
+
+########################################################################################################################
+view-source:http://192.168.8.1/api/monitoring/traffic-statistics
+traffic-statistics
+    -CurrentDownloadRate
+    -CurrentUploadRate
+
+    -CurrentDownload
+    -CurrentUpload
+
+    -TotalDownload
+    -TotalUpload
+
+    -CurrentConnectTime
+    -TotalConnectTime
+
+########################################################################################################################
+view-source:http://192.168.8.1/api/dhcp/s
+dns
+    -DnsStatus (0= Manual ,, 1= Auto)
+    -SecondaryDns
+    -PrimaryDns
+
+
+
+
+########################################################################################################################
+####################################################   data_info   #####################################################
+
+view-source:http://192.168.8.1/api/monitoring/status
+
+# ConnectionStatus
+900 - connecting
+901 - connected
+902 - disconnected
+903 - disconnecting
+904 - Connection failed
+905 - no connection (weak signal)
+906 - Connection error
+
+# CurrentNetworkType, CurrentNetworkTypeEx:
+0 - no service
+1 - GSM
+2 - GPRS
+3 - EDGE
+4 - WCDMA
+5 - HSDPA
+6 - HSUPA
+7 - HSPA
+8 - TDSCDMA
+9 - HSPA +
+10 - EVDO rev. 0
+11 - EVDO rev. AND
+12 - EVDO rev. B
+13 - 1xRTT
+14 - UMB
+15 - 1xEVDV
+16 - 3xRTT
+17 - HSPA + 64QAM
+18 - HSPA + MIMO
+19 - LTE #################################
+20 - LTE_NR ##############################
+21 - IS95A
+22 - IS95B
+23 - CDMA1x
+24 - EVDO rev. 0
+25 - EVDO rev. AND
+26 - EVDO rev. B
+27 - Hybrid CDMA1x
+28 - Hybrid EVDO rev. 0
+29 - Hybrid EVDO rev. AND
+30 - Hybrid EVDO rev. B
+31 - EHRPD rev. 0
+32 - EHRPD rev. AND
+33 - EHRPD rev. B
+34 - Hybrid EHRPD rev. 0
+35 - Hybrid EHRPD rev. AND
+36 - Hybrid EHRPD rev. B
+41 - WCDMA
+42 - HSDPA
+43 - HSUPA
+44 - HSPA
+45 - HSPA +
+46 - DC HSPA +
+61 - TD SCDMA
+62 - TD HSDPA
+63 - TD HSUPA
+64 - TD HSPA
+65 - TD HSPA +
+81 - 802.16E
+101 - LTE ##############################
+1011 - LTE CA ##########################
+111 - NR ###############################
+
+
+####################################################################################################
+view-source:http://192.168.8.1/api/net/current-plmn
+
+Rat:
+0 - 2G network
+2 - 3G network
+5 - HSPA / HSPA + network
+7 - 4G network
+####################################################################################################
+view-source:http://192.168.8.1/api/net/net-mode
+
+-NetworkMode:
+00 - automatically (all networks)
+01 - 2G only
+02 - 3G only
+03 - Only 4G (LTE)
+99 - no change
+0201 - 3G+2G
+0301 - 4G + 2G
+0302 - 4G+3G
+08 - NR (nroption ==  0 = NSA , 1 = SA , 2 = SANSA)
+
+
+-NetworkBand:
+80 - GSM1800
+300 - GSM900
+80000 - GSM850
+200000 - GSM1900
+400,000 - UTMS B1 (2,100)
+800,000 - UTMS B2 (1900)
+4,000,000 - UTMS B5 (850)
+2000000000000 - UTMS B8 (900)
+1 - BC0A
+2 - BC0B
+4 - BC1
+8 - BC2
+10 - BC3
+20 - BC4
+40 - BC5
+400 - BC6
+800 - BC7
+1000 - BC8
+2000 - BC9
+4000 - BC10
+8000 - BC11
+10000000 - BC12
+20000000 - BC13
+80000000 - BC14
+3FFFFFFF - All supported
+another entry is a hexadecimal sum of the above networks (e.g. GSM900 + UTMS B8 = 0x2000000000000 + 0x300 = 0x2000000000300)
+
+-LTEBand:
+hex_NUM - band_num (freg_NUM)
+1 - B1 (FDD 2100)
+4 - B3 (FDD 1800)
+8000000 - B28 (FDD 700)
+8,000,000,000 - B40 (TDD 2300)
+
+40 - B7 (FDD 2600)
+80 - B8 (FDD 900)
+80,000 - B20 (FDD 800)
+2,000,000,000 - B38 (TDD 2600)
+
+800C5 - EU bands (LTE Band 1, 3, 7, 8, 20)
+800D5 - EU / Asia / Africa bands (LTE Band 1, 3, 5, 7, 8, 20)
+
+7FFFFFFFFFFFFFFF - All bands
+another notation is the hexadecimal sum of the above networks (OR  2**(band_num-1) then turn to hex)
+
+
+7E2880800D5 - (auto for 5G??)
+7E288080095 -(FDD2100+1800+850+900+800eu+700+1500,TDD2000+2600+1900+2300+2500+3500+3700)
+
+
+
+
+
+
+#######################################################################################################################
+#######################################################################################################################
+                                                 advance page
+/api/device/
+    -signal
+    -information
+
+/api/net/
+    -plmn
+    -plmn_list
+    -net_mode
+    -net_mode_list
+
+/api/monitoring/
+    -status
+
+/api/dhcp/
+    -settings
+
+
+
+-reset
+-restart
+-shutdown
+
+
+
+
+########################################################################################################################
+##############                                     resources                                       #####################
+##############                                                                                     #####################
+
+                                                    Huawei API
+# router api library
+https://github.com/Salamek/huawei-lte-api
+
+                                                     API Info
+## api info1
+http://www.bez-kabli.pl/viewtopic.php?t=42168
+
+
+
+                                                    LTE Info
+## IDs in LTE
+https://sharetechnote.com/html/Handbook_LTE_IDs_in_LTE.html
+
+##LTE Identification II: NE and Location Identifiers
+https://www.netmanias.com/en/?m=view&id=techdocs&no=5906
+
+## A Super-High-Level View of LTE
+https://blog.colte.network/a-super-high-level-view-of-lte/
+
+                                                   LTE Bands calculator
+# hex calculator
+https://www.calculator.net/hex-calculator.html?b2dnumber1=4000000000&calctype=b2d&x=50&y=31#hex2decimal
+
+# decimal calculator
+https://www.meta-calculator.com/scientific-calculator.php?panel-201-calculator

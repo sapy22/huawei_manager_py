@@ -1,0 +1,624 @@
+# English translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-05-01 10:31+0300\n"
+"PO-Revision-Date: 2024-04-30 09:12+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: src/main/controller.py:111 src/main/navbar.py:41
+msgid "Settings"
+msgstr ""
+
+#: src/main/controller.py:125 src/main/navbar.py:45
+msgid "About"
+msgstr ""
+
+#: src/main/navbar.py:25
+msgid "Signal"
+msgstr ""
+
+#: src/main/navbar.py:29
+msgid "Band Select"
+msgstr ""
+
+#: src/main/navbar.py:33
+msgid "SMS"
+msgstr ""
+
+#: src/main/navbar.py:37
+msgid "Advance"
+msgstr ""
+
+#: src/pages/advance/view.py:27
+msgid "Get"
+msgstr ""
+
+#: src/pages/advance/view.py:32
+msgid "Set"
+msgstr ""
+
+#: src/pages/advance/tabs/get/controller.py:37
+msgid "Internet connection will reset. Continue?"
+msgstr ""
+
+#: src/pages/advance/tabs/get/view.py:49
+msgid "Name"
+msgstr ""
+
+#: src/pages/advance/tabs/get/view.py:50
+msgid "Value"
+msgstr ""
+
+#: src/pages/advance/tabs/get/view.py:137 src/pages/sms/view.py:113
+msgid "Exit"
+msgstr ""
+
+#: src/pages/advance/tabs/set/controller.py:37
+msgid "The device will shutdown. Continue??"
+msgstr ""
+
+#: src/pages/advance/tabs/set/controller.py:40
+msgid "The device will restart. Continue?"
+msgstr ""
+
+#: src/pages/advance/tabs/set/controller.py:43
+msgid "All configurations will be restored to factory settings. Continue?"
+msgstr ""
+
+#: src/pages/advance/tabs/set/controller.py:54
+msgid "Apply dns settings. Continue?"
+msgstr ""
+
+#: src/pages/advance/tabs/set/controller.py:61
+msgid "Reset dns settings. Continue?"
+msgstr ""
+
+#: src/pages/advance/tabs/set/view.py:27
+msgid "Power"
+msgstr ""
+
+#: src/pages/advance/tabs/set/view.py:30
+msgid "ShutDown"
+msgstr ""
+
+#: src/pages/advance/tabs/set/view.py:33
+msgid "Restart"
+msgstr ""
+
+#: src/pages/advance/tabs/set/view.py:36 src/pages/advance/tabs/set/view.py:63
+msgid "Reset"
+msgstr ""
+
+#: src/pages/advance/tabs/set/view.py:44
+msgid "DNS"
+msgstr ""
+
+#: src/pages/advance/tabs/set/view.py:49
+#: src/pages/settings/tabs/connection/view.py:32
+msgid "IP"
+msgstr ""
+
+#: src/pages/advance/tabs/set/view.py:53
+msgid "Primary"
+msgstr ""
+
+#: src/pages/advance/tabs/set/view.py:57
+msgid "Secondary"
+msgstr ""
+
+#: src/pages/advance/tabs/set/view.py:60 src/pages/bandselect/view.py:179
+msgid "Apply"
+msgstr ""
+
+#: src/pages/bandselect/controller.py:90
+msgid "Apply band settings. Continue?"
+msgstr ""
+
+#: src/pages/bandselect/controller.py:94
+msgid "Choose at least one lte band!"
+msgstr ""
+
+#: src/pages/bandselect/view.py:28 src/pages/bandselect/view.py:52
+msgid "Network Mode"
+msgstr ""
+
+#: src/pages/bandselect/view.py:32 src/pages/bandselect/view.py:68
+msgid "Network Band"
+msgstr ""
+
+#: src/pages/bandselect/view.py:36
+msgid "LTE band"
+msgstr ""
+
+#: src/pages/bandselect/view.py:60 src/pages/bandselect/view.py:76
+#: src/pages/bandselect/view.py:91
+msgid "Auto"
+msgstr ""
+
+#: src/pages/bandselect/view.py:61
+msgid "4G only"
+msgstr ""
+
+#: src/pages/bandselect/view.py:62
+msgid "NR"
+msgstr ""
+
+#: src/pages/bandselect/view.py:82
+msgid "LTE Band"
+msgstr ""
+
+#: src/pages/bandselect/view.py:92
+msgid "Manual"
+msgstr ""
+
+#: src/pages/bandselect/view.py:159
+msgid "Band Hint"
+msgstr ""
+
+#: src/pages/bandselect/view.py:167
+msgid "None"
+msgstr ""
+
+#: src/pages/bandselect/view.py:168
+msgid "STC"
+msgstr ""
+
+#: src/pages/bandselect/view.py:169
+msgid "Mobily"
+msgstr ""
+
+#: src/pages/bandselect/view.py:170
+msgid "Zain"
+msgstr ""
+
+#: src/pages/bandselect/view.py:182
+msgid "Clear"
+msgstr ""
+
+#: src/pages/settings/view.py:37
+msgid "Connection"
+msgstr ""
+
+#: src/pages/settings/tabs/language/view.py:21 src/pages/settings/view.py:42
+msgid "Language"
+msgstr ""
+
+#: src/pages/settings/view.py:47
+msgid "UI"
+msgstr ""
+
+#: src/pages/settings/view.py:61
+msgid "Save"
+msgstr ""
+
+#: src/pages/settings/tabs/connection/view.py:37
+msgid "USER"
+msgstr ""
+
+#: src/pages/settings/tabs/connection/view.py:42
+msgid "PASSWORD"
+msgstr ""
+
+#: src/pages/settings/tabs/connection/view.py:48
+msgid "Show Pass"
+msgstr ""
+
+#: src/pages/settings/tabs/connection/view.py:52
+msgid "Keep Connection"
+msgstr ""
+
+#: src/pages/settings/tabs/connection/view.py:54
+msgid "Auto login after 5min"
+msgstr ""
+
+#: src/pages/settings/tabs/language/view.py:29
+msgid "English"
+msgstr ""
+
+#: src/pages/settings/tabs/language/view.py:31
+msgid "Arabic"
+msgstr ""
+
+#: src/pages/settings/tabs/language/view.py:38
+msgid "Layout Direction"
+msgstr ""
+
+#: src/pages/settings/tabs/language/view.py:46
+msgid "Left to Right"
+msgstr ""
+
+#: src/pages/settings/tabs/language/view.py:48
+msgid "Right to Left"
+msgstr ""
+
+#: src/pages/settings/tabs/ui/view.py:21
+msgid "Mode"
+msgstr ""
+
+#: src/pages/settings/tabs/ui/view.py:29
+msgid "NR-5G"
+msgstr ""
+
+#: src/pages/settings/tabs/ui/view.py:35
+msgid "Graph"
+msgstr ""
+
+#: src/pages/settings/tabs/ui/view.py:43
+msgid "RSRQ"
+msgstr ""
+
+#: src/pages/settings/tabs/ui/view.py:46
+msgid "RSRP"
+msgstr ""
+
+#: src/pages/settings/tabs/ui/view.py:49
+msgid "SINR"
+msgstr ""
+
+#: src/pages/settings/tabs/ui/view.py:52
+msgid "Download & Upload"
+msgstr ""
+
+#: src/pages/signal/task.py:80
+msgid "login required"
+msgstr ""
+
+#: src/pages/signal/view.py:31
+msgid "Monitor"
+msgstr ""
+
+#: src/pages/signal/view.py:36
+msgid "Statistics"
+msgstr ""
+
+#: src/pages/signal/view.py:46
+msgid "start"
+msgstr ""
+
+#: src/pages/signal/view.py:50
+msgid "stop"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/controller.py:277
+msgid "connecting"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/controller.py:277
+msgid "connected"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/controller.py:277
+msgid "disconnected"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/controller.py:277
+msgid "no connection"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/controller.py:277
+msgid "connection error"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/controller.py:278
+msgid "restricted"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/controller.py:278
+msgid "unrestricted"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:58
+msgid "Network"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:63
+msgid "FullName"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:69
+msgid "LTE 4G"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:74
+msgid "rsrq"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:78
+#: src/pages/signal/tabs/monitor/view.py:122
+msgid "signal qualty"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:79
+#: src/pages/signal/tabs/monitor/view.py:123
+msgid "-20 to 0, lower is better"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:81
+msgid "rsrp"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:85
+#: src/pages/signal/tabs/monitor/view.py:129
+msgid "signal power"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:86
+#: src/pages/signal/tabs/monitor/view.py:130
+msgid "-90 to -70, lower is better"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:88
+msgid "sinr"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:92
+#: src/pages/signal/tabs/monitor/view.py:136
+msgid "signal to noise ratio"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:93
+#: src/pages/signal/tabs/monitor/view.py:137
+msgid "0 to 20, higher is better"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:95
+msgid "txpower"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:99
+msgid "band"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:103
+msgid "dlbandwidth"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:107
+msgid "rssi"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:113
+msgid "NR 5G"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:118
+msgid "nrrsrq"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:125
+msgid "nrrsrp"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:132
+msgid "nrsinr"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:139
+msgid "nrtxpower"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:143
+msgid "nrband"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:147
+msgid "nrdlbandwidth"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:151
+msgid "mode"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:157
+msgid "LTE Tower"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:164
+msgid "pci"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:168
+msgid "physical cell id"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:170
+msgid "cid"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:175
+msgid "sector id"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:176
+msgid "cid=(eci-(256*endB))"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:179
+msgid "Connection and Endc"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:186
+msgid "connectionstatus"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:191
+msgid "endcstatus"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:196
+msgid "SignalIcon"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:200
+msgid "SignalIconNr"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:204
+msgid "CurrentNetworkType"
+msgstr ""
+
+#: src/pages/signal/tabs/monitor/view.py:208
+msgid "CurrentNetworkTypeEx"
+msgstr ""
+
+#: src/pages/signal/tabs/statistics/view.py:32
+msgid "CurrentDownload"
+msgstr ""
+
+#: src/pages/signal/tabs/statistics/view.py:36
+msgid "CurrentUpload"
+msgstr ""
+
+#: src/pages/signal/tabs/statistics/view.py:40
+msgid "CurrentConnectTime"
+msgstr ""
+
+#: src/pages/signal/tabs/statistics/view.py:48
+msgid "TotalDownload"
+msgstr ""
+
+#: src/pages/signal/tabs/statistics/view.py:52
+msgid "TotalUpload"
+msgstr ""
+
+#: src/pages/signal/tabs/statistics/view.py:56
+msgid "TotalConnectTime"
+msgstr ""
+
+#: src/pages/signal/tabs/statistics/view.py:64
+msgid "CurrentDownloadRate"
+msgstr ""
+
+#: src/pages/signal/tabs/statistics/view.py:68
+msgid "CurrentUploadRate"
+msgstr ""
+
+#: src/pages/signal/tabs/statistics/view.py:84
+msgid "Download Mb"
+msgstr ""
+
+#: src/pages/signal/tabs/statistics/view.py:89
+msgid "Upload Mb"
+msgstr ""
+
+#: src/pages/sms/controller.py:72
+msgid "Send SMS. Continue?"
+msgstr ""
+
+#: src/pages/sms/controller.py:79
+msgid "The Number\\s or Message is empty!"
+msgstr ""
+
+#: src/pages/sms/controller.py:83
+msgid "Message length cannot exceed 160 characters!"
+msgstr ""
+
+#: src/pages/sms/view.py:23
+msgid "New SMS"
+msgstr ""
+
+#: src/pages/sms/view.py:39
+msgid "Inbox"
+msgstr ""
+
+#: src/pages/sms/view.py:41
+msgid "Outbox"
+msgstr ""
+
+#: src/pages/sms/view.py:56
+msgid "Contacts"
+msgstr ""
+
+#: src/pages/sms/view.py:57
+msgid "Content"
+msgstr ""
+
+#: src/pages/sms/view.py:58
+msgid "Date"
+msgstr ""
+
+#: src/pages/sms/view.py:74
+msgid "use ; to separate more than one number"
+msgstr ""
+
+#: src/pages/sms/view.py:75
+msgid "Number\\s"
+msgstr ""
+
+#: src/pages/sms/view.py:84
+msgid "Send"
+msgstr ""
+
+#: src/shared/connection.py:26
+msgid "IP or User or Password is empty!"
+msgstr ""
+
+#: src/shared/connection.py:29
+msgid "Username or Password is wrong!"
+msgstr ""
+
+#: src/shared/connection.py:32
+msgid "Password is overrun wait a few minutes."
+msgstr ""
+
+#: src/shared/connection.py:35
+msgid "Request timed out while trying to connect."
+msgstr ""
+
+#: src/shared/connection.py:38
+msgid "Connect Error!"
+msgstr ""
+
+#: src/shared/utils.py:61
+msgid "Error"
+msgstr ""
+
+#: src/shared/utils.py:63
+msgid "Info"
+msgstr ""
+
+#: src/shared/utils.py:65
+msgid "Response"
+msgstr ""
+
+#: src/shared/utils.py:67
+msgid "Confirm"
+msgstr ""
+
+#: src/shared/settings/settings.py:39
+msgid "Settings file does not exist!"
+msgstr ""
+
+#: src/shared/settings/settings.py:50
+msgid "Settings file invalid!"
+msgstr ""
+
+#: src/shared/settings/settings.py:56
+msgid "Settings file error!"
+msgstr ""
+
+#: src/shared/settings/validator.py:28 src/shared/settings/validator.py:30
+msgid "Connection settings invalid!"
+msgstr ""
+
+#: src/shared/settings/validator.py:47 src/shared/settings/validator.py:49
+msgid "Language settings invalid!"
+msgstr ""
+
+#: src/shared/settings/validator.py:78 src/shared/settings/validator.py:80
+msgid "UI settings invalid!"
+msgstr ""
+

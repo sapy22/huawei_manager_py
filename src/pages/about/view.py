@@ -15,7 +15,7 @@ class AboutView(ttk.Frame):
         about_window_frm.grid(sticky=tk.NSEW,pady=10)
         about_window_frm.columnconfigure(0,weight=1)
 
-        txt = "Tkinter\nhuawei-lte-api\n______\nver 2.0\nhttps://github.com/sapy22"
+        txt = "Tkinter\nhuawei-lte-api\n______\nver 2.0\nhttps://github.com/sapy22/huawei_manager_py"
 
         ttk.Label(about_window_frm,text=txt,anchor=tk.CENTER,justify=tk.CENTER,font="helvetica 12").grid(row=0,column=0)
 

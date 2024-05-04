@@ -70,13 +70,19 @@ Tested on Huawei 5G CPE H122-373 / H122-370
    ```
 
 ## Linux
-On Ubuntu, you need to install python3-tk and python3-venv. Arabic text is not fully supported, though.
+On Ubuntu, you need to install python3-tk and python3-venv. Arabic text is not fully supported, though.  
+      ```
+      python3 -m venv venv
+      ```  
+      ```
+      source venv/bin/activate
+      ```  
+      ```
+      pip install -r requirement.txt
+      ```  
+      ```
+      python3 main.py
+      ```
 
 ## Note
-I created this app for personal use and to learn about design patterns, clean code, unit testing, and GUI development...  
-Some code may appear irrelevant, unnecessary, undocumented, it's there for a reference purposes.
-
-Developed On  
-Windows 10  
-Python 3.11-12  
-VS Code (Python extension only)
+Check docs for more info.

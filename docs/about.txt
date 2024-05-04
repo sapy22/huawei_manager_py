@@ -1,0 +1,28 @@
+I created this app for personal use and to learn about design patterns, clean code, unit testing, and GUI development...  
+Some code may appear irrelevant, unnecessary, undocumented, it's there for a reference purposes.
+
+Developed On  
+Windows 10  
+Python 3.11-12  
+VS Code (Python extension only)
+
+
+####################################################################
+rtl layout
+
+
+
+
+
+
+
+####################################################################
+mvc architecture
+
+
+
+
+
+
+
+

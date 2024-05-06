@@ -61,16 +61,12 @@ class RTLStyle(enum.Enum):
 COUNTRIES = ("France","Japan","Kuwait","Russia","Saudi Arabia")
 
 
-COUNTRIES_MOBILE_OPERATORS = { # prefix to avoid conflict
-    "France" : (),
-    "Japan" : (),
-    "Kuwait" : (),
-    "Russia" : (),
+COUNTRIES_MOBILE_OPERATORS: dict[str, tuple[str, ...]] = { # prefix country code to avoid naming conflict    
     "Saudi Arabia" : ("SA_STC","SA_Mobily","SA_Zain")
 }
 
 
-MOBILE_OPERATORS_BANDS = {
+MOBILE_OPERATORS_BANDS: dict[str, tuple[str, ...]] = {
     "SA_STC" : ("b1","b3","b8","b28","b40"),
     "SA_Mobily" : ("b1","b3","b20","b38","b41"),
     "SA_Zain" : ("b1","b3","b8","b20","b38")

@@ -57,7 +57,11 @@ def _validate_ui_settings(data):
         nr_5g = data.get("nr_5g")
         if not type(nr_5g) is bool:
             err = True
-
+        
+        country = data.get("country")
+        if not type(country) is str:
+            err = True
+        
         rsrq_graph = data.get("rsrq_graph")
         if not type(rsrq_graph) is bool:
             err = True

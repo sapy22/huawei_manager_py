@@ -1,1 +1,1 @@
-from .settings import resources_dir, save_settings, load_settings, get_language, get_layout_direction, get_ip_address
+from .settings import resources_dir, save_settings, load_settings, get_language, get_layout_direction, get_ip_address, get_country

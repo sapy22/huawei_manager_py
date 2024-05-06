@@ -29,10 +29,6 @@ class BandSelectController(BandSelectView):
  
         self.current_hinted_btns: tuple = ()
 
-        self.stc_btns = (self.b1_chk_btn,self.b3_chk_btn,self.b8_chk_btn,self.b28_chk_btn,self.b40_chk_btn)
-        self.mobily_btns = (self.b1_chk_btn,self.b3_chk_btn,self.b20_chk_btn,self.b38_chk_btn,self.b41_chk_btn)
-        self.zain_btns = (self.b1_chk_btn,self.b3_chk_btn,self.b8_chk_btn,self.b20_chk_btn,self.b38_chk_btn)
-
     
     def setup_event_handler(self):
         for chk_btn in self.lte_band_frm.grid_slaves():
@@ -60,19 +56,18 @@ class BandSelectController(BandSelectView):
                 enable_children_widgets(self.lte_band_frm)
 
 
-    def on_band_hint_rd_btn_pressed(self,value):
-        match value:
-            case "none":
-                self._clear_band_hint()
-            case "stc":
-                self._clear_band_hint()
-                self._apply_band_hint(self.stc_btns)
-            case "mobily":
-                self._clear_band_hint()
-                self._apply_band_hint(self.mobily_btns)
-            case "zain":
-                self._clear_band_hint()
-                self._apply_band_hint(self.zain_btns)
+    def on_band_hint_rd_btn_pressed(self, value: str | tuple[str, ...]):
+        if value == "none":
+            self._clear_band_hint()
+            return
+        
+        btns_list = []
+        for btn_txt in value:
+            btn_txt = btn_txt.lower()
+            btns_list.append(getattr(self,f"{btn_txt}_chk_btn"))
+
+        self._clear_band_hint()
+        self._apply_band_hint(tuple(btns_list))
     
 
     def on_clear_btn_pressed(self):
@@ -158,31 +153,6 @@ class BandSelectController(BandSelectView):
         
         except:
             pass
-
-
-    def _clear_band_hint(self):
-        if not self.current_hinted_btns:
-            return
-        
-        s = "TCheckbutton"
-        if lc_is_rtl_layout():
-            s = StyleDict.get("RTL Checkbutton")
-
-        for btn in self.current_hinted_btns:
-            btn.configure(style=s)
-        
-        self.current_hinted_btns = ()
-
-
-    def _apply_band_hint(self, btns: tuple):
-        self.current_hinted_btns = btns
-
-        s = "hint.TCheckbutton"
-        if lc_is_rtl_layout():
-            s = StyleDict.get("Hint RTL Checkbutton")
-
-        for btn in btns:
-            btn.configure(style=s)
     
 
     def set_net_mode(self):
@@ -223,6 +193,31 @@ class BandSelectController(BandSelectView):
         self.apply_btn.configure(state="normal")
         
         self.after(100, self.get_net_mode)
+    
+
+    def _clear_band_hint(self):
+        if not self.current_hinted_btns:
+            return
+        
+        s = "TCheckbutton"
+        if lc_is_rtl_layout():
+            s = StyleDict.get("RTL Checkbutton")
+
+        for btn in self.current_hinted_btns:
+            btn.configure(style=s)
+        
+        self.current_hinted_btns = ()
+
+
+    def _apply_band_hint(self, btns: tuple):
+        self.current_hinted_btns = btns
+
+        s = "hint.TCheckbutton"
+        if lc_is_rtl_layout():
+            s = StyleDict.get("Hint RTL Checkbutton")
+
+        for btn in btns:
+            btn.configure(style=s)
     
 
     def check_locale(self):

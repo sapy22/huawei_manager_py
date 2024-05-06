@@ -1,6 +1,9 @@
 import tkinter as tk
 import tkinter.ttk as ttk
 
+from src.shared.settings import get_country
+from src.shared.constant import COUNTRIES_MOBILE_OPERATORS, MOBILE_OPERATORS_BANDS
+
 
 
 
@@ -80,7 +83,7 @@ class BandSelectView(ttk.Frame):
         pad_option = {"padx":5,"pady":5,"ipadx":5,"ipady":5}
 
         lb_frm = ttk.Labelframe(self.band_select_frm,padding=5,text=_("LTE Band"),labelanchor=tk.NW)
-        lb_frm.grid(row=2,column=0)
+        lb_frm.grid(row=2,column=0,sticky=tk.NSEW)
         lb_frm.columnconfigure(0,weight=1)
 
         #
@@ -93,7 +96,7 @@ class BandSelectView(ttk.Frame):
 
         #
         self.lte_band_frm = ttk.Frame(lb_frm,padding=5)
-        self.lte_band_frm.grid(row=1,column=0)
+        self.lte_band_frm.grid(row=1,column=0,sticky=tk.W)
 
         self.b1_v = tk.BooleanVar(value=False)
         self.b1_chk_btn = ttk.Checkbutton(self.lte_band_frm,text="B1-2100",variable=self.b1_v,state="disabled")
@@ -164,10 +167,23 @@ class BandSelectView(ttk.Frame):
         continer_frm.grid(row=0,column=0,sticky=tk.W)
 
         self.band_hint_v = tk.StringVar(value="none") 
-        ttk.Radiobutton(continer_frm,text=_("None"),variable=self.band_hint_v,value="none",command=lambda:self.on_band_hint_rd_btn_pressed("none")).grid(row=0,column=0,**pad_option)
-        ttk.Radiobutton(continer_frm,text=_("STC"),variable=self.band_hint_v,value="stc",command=lambda:self.on_band_hint_rd_btn_pressed("stc")).grid(row=0,column=1,**pad_option)
-        ttk.Radiobutton(continer_frm,text=_("Mobily"),variable=self.band_hint_v,value="mobily",command=lambda:self.on_band_hint_rd_btn_pressed("mobily")).grid(row=0,column=2,**pad_option)
-        ttk.Radiobutton(continer_frm,text=_("Zain"),variable=self.band_hint_v,value="zain",command=lambda:self.on_band_hint_rd_btn_pressed("zain")).grid(row=0,column=3,**pad_option)
+        ttk.Radiobutton(continer_frm,text=_("None"),variable=self.band_hint_v,value="none",
+        command=lambda:self.on_band_hint_rd_btn_pressed("none")).grid(row=0,column=0,**pad_option)
+
+        try:
+            c = 1
+            r = 0
+            for mobile_operator in COUNTRIES_MOBILE_OPERATORS[get_country()]:
+                txt =  mobile_operator.split("_")[1]
+                bands = MOBILE_OPERATORS_BANDS[mobile_operator]
+                ttk.Radiobutton(continer_frm,text=txt,variable=self.band_hint_v,value=mobile_operator,
+                command=lambda b=bands:self.on_band_hint_rd_btn_pressed(b)).grid(row=r,column=c,**pad_option)
+                c += 1
+                if c > 6:
+                    c = 0
+                    r += 1
+        except:
+            pass
 
 
     def _setup_apply_widget(self):

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-01 10:31+0300\n"
+"POT-Creation-Date: 2024-05-06 14:27+0300\n"
 "PO-Revision-Date: 2024-04-30 11:50+0300\n"
 "Last-Translator: \n"
 "Language: ar_SA\n"
@@ -120,72 +120,60 @@ msgstr "أساسي"
 msgid "Secondary"
 msgstr "ثانوي"
 
-#: src/pages/advance/tabs/set/view.py:60 src/pages/bandselect/view.py:179
+#: src/pages/advance/tabs/set/view.py:60 src/pages/bandselect/view.py:195
 msgid "Apply"
 msgstr "تطبيق"
 
-#: src/pages/bandselect/controller.py:90
+#: src/pages/bandselect/controller.py:85
 msgid "Apply band settings. Continue?"
 msgstr "تطبيق إعدادات النطاق. هل ترغب في المتابعة؟"
 
-#: src/pages/bandselect/controller.py:94
+#: src/pages/bandselect/controller.py:89
 msgid "Choose at least one lte band!"
 msgstr "اختر نطاق واحد على الأقل"
 
-#: src/pages/bandselect/view.py:28 src/pages/bandselect/view.py:52
+#: src/pages/bandselect/view.py:31 src/pages/bandselect/view.py:55
 msgid "Network Mode"
 msgstr "وضع الشبكة"
 
-#: src/pages/bandselect/view.py:32 src/pages/bandselect/view.py:68
+#: src/pages/bandselect/view.py:35 src/pages/bandselect/view.py:71
 msgid "Network Band"
 msgstr "نطاق الشبكة"
 
-#: src/pages/bandselect/view.py:36
+#: src/pages/bandselect/view.py:39
 msgid "LTE band"
 msgstr "LTE نطاق"
 
-#: src/pages/bandselect/view.py:60 src/pages/bandselect/view.py:76
-#: src/pages/bandselect/view.py:91
+#: src/pages/bandselect/view.py:63 src/pages/bandselect/view.py:79
+#: src/pages/bandselect/view.py:94
 msgid "Auto"
 msgstr "Auto"
 
-#: src/pages/bandselect/view.py:61
+#: src/pages/bandselect/view.py:64
 msgid "4G only"
 msgstr "4G only"
 
-#: src/pages/bandselect/view.py:62
+#: src/pages/bandselect/view.py:65
 msgid "NR"
 msgstr "NR"
 
-#: src/pages/bandselect/view.py:82
+#: src/pages/bandselect/view.py:85
 msgid "LTE Band"
 msgstr "LTE نطاق"
 
-#: src/pages/bandselect/view.py:92
+#: src/pages/bandselect/view.py:95
 msgid "Manual"
 msgstr "يدوي"
 
-#: src/pages/bandselect/view.py:159
+#: src/pages/bandselect/view.py:162 src/pages/settings/tabs/ui/view.py:48
 msgid "Band Hint"
 msgstr "تلميح النطاقات"
 
-#: src/pages/bandselect/view.py:167
+#: src/pages/bandselect/view.py:170
 msgid "None"
 msgstr "بدون"
 
-#: src/pages/bandselect/view.py:168
-msgid "STC"
-msgstr "الاتصالات السعودية"
-
-#: src/pages/bandselect/view.py:169
-msgid "Mobily"
-msgstr "موبايلي"
-
-#: src/pages/bandselect/view.py:170
-msgid "Zain"
-msgstr "زين"
-
-#: src/pages/bandselect/view.py:182
+#: src/pages/bandselect/view.py:198
 msgid "Clear"
 msgstr "مسح"
 
@@ -245,31 +233,35 @@ msgstr "اليسار إلى اليمين"
 msgid "Right to Left"
 msgstr "اليمين إلى اليسار"
 
-#: src/pages/settings/tabs/ui/view.py:21
+#: src/pages/settings/tabs/ui/view.py:34
 msgid "Mode"
 msgstr "الوضع"
 
-#: src/pages/settings/tabs/ui/view.py:29
+#: src/pages/settings/tabs/ui/view.py:42
 msgid "NR-5G"
 msgstr "5G إشارة"
 
-#: src/pages/settings/tabs/ui/view.py:35
+#: src/pages/settings/tabs/ui/view.py:52
+msgid "Country"
+msgstr "الدولة"
+
+#: src/pages/settings/tabs/ui/view.py:63
 msgid "Graph"
 msgstr "الرسوم البيانية"
 
-#: src/pages/settings/tabs/ui/view.py:43
+#: src/pages/settings/tabs/ui/view.py:71
 msgid "RSRQ"
 msgstr "جودة الإشارة"
 
-#: src/pages/settings/tabs/ui/view.py:46
+#: src/pages/settings/tabs/ui/view.py:74
 msgid "RSRP"
 msgstr "قوة الإشارة"
 
-#: src/pages/settings/tabs/ui/view.py:49
+#: src/pages/settings/tabs/ui/view.py:77
 msgid "SINR"
 msgstr "إشارة / تشويش"
 
-#: src/pages/settings/tabs/ui/view.py:52
+#: src/pages/settings/tabs/ui/view.py:80
 msgid "Download & Upload"
 msgstr "سرعة التنزيل و الرفع"
 
@@ -293,31 +285,31 @@ msgstr "ابدأ"
 msgid "stop"
 msgstr "توقف"
 
-#: src/pages/signal/tabs/monitor/controller.py:277
+#: src/pages/signal/tabs/monitor/controller.py:278
 msgid "connecting"
 msgstr "جار الاتصال"
 
-#: src/pages/signal/tabs/monitor/controller.py:277
+#: src/pages/signal/tabs/monitor/controller.py:278
 msgid "connected"
 msgstr "متصل"
 
-#: src/pages/signal/tabs/monitor/controller.py:277
+#: src/pages/signal/tabs/monitor/controller.py:278
 msgid "disconnected"
 msgstr "غير متصل"
 
-#: src/pages/signal/tabs/monitor/controller.py:277
+#: src/pages/signal/tabs/monitor/controller.py:278
 msgid "no connection"
 msgstr "لا يوجد اتصال"
 
-#: src/pages/signal/tabs/monitor/controller.py:277
+#: src/pages/signal/tabs/monitor/controller.py:278
 msgid "connection error"
 msgstr "خطأ في الاتصال"
 
-#: src/pages/signal/tabs/monitor/controller.py:278
+#: src/pages/signal/tabs/monitor/controller.py:279
 msgid "restricted"
 msgstr "غير متصل"
 
-#: src/pages/signal/tabs/monitor/controller.py:278
+#: src/pages/signal/tabs/monitor/controller.py:279
 msgid "unrestricted"
 msgstr "متصل"
 
@@ -603,11 +595,11 @@ msgstr "تأكيد"
 msgid "Settings file does not exist!"
 msgstr "ملف الإعدادات غير موجود"
 
-#: src/shared/settings/settings.py:50
+#: src/shared/settings/settings.py:48
 msgid "Settings file invalid!"
 msgstr "ملف الإعدادات غير صالح"
 
-#: src/shared/settings/settings.py:56
+#: src/shared/settings/settings.py:54
 msgid "Settings file error!"
 msgstr "خطأ في ملف الإعدادات"
 
@@ -619,7 +611,16 @@ msgstr "إعدادات الاتصال غير صالحة"
 msgid "Language settings invalid!"
 msgstr "إعدادات اللغة غير صالحة"
 
-#: src/shared/settings/validator.py:78 src/shared/settings/validator.py:80
+#: src/shared/settings/validator.py:82 src/shared/settings/validator.py:84
 msgid "UI settings invalid!"
 msgstr "إعدادات واجهة المستخدم غير صالحة"
+
+#~ msgid "STC"
+#~ msgstr "الاتصالات السعودية"
+
+#~ msgid "Mobily"
+#~ msgstr "موبايلي"
+
+#~ msgid "Zain"
+#~ msgstr "زين"
 

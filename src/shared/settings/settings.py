@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 
-from src.shared.constant import LanguageDict, DirectionDict
+from src.shared.constant import LanguageDict, DirectionDict, COUNTRIES
 from src.shared.exceptions import SettingsError, SettingsFileNotExist, SettingsFileInvalid, SettingsDataInvalid
 
 from .validator import validate_settings
@@ -99,9 +99,13 @@ def get_layout_direction():
 
 
 def get_ip_address():
-    try:
-        ip = settings_data.get("connection").get("ip")
-    except:
-         ip = ""
+    return settings_data.get("connection").get("ip")
+
+
+def get_country():
+    country = settings_data.get("ui").get("country")
+
+    if country not in COUNTRIES:
+        country = ""
     
-    return ip
+    return country

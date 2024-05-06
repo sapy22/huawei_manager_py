@@ -13,6 +13,7 @@ class UIController(UIView):
     def save_data(self,data):
         data["ui"] = {
             "nr_5g" : self.nr_5g_mode_v.get(),
+            "country":self.country_cb.get(),
             "rsrq_graph" : self.rsrq_graph_v.get(),
             "rsrp_graph" : self.rsrp_graph_v.get(),
             "sinr_graph" : self.sinr_graph_v.get(),
@@ -24,6 +25,7 @@ class UIController(UIView):
         data = data.get("ui")
         
         self.nr_5g_mode_v.set(data.get("nr_5g"))
+        self.country_cb.set(data.get("country"))
         self.rsrq_graph_v.set(data.get("rsrq_graph"))
         self.rsrp_graph_v.set(data.get("rsrp_graph"))
         self.sinr_graph_v.set(data.get("sinr_graph"))

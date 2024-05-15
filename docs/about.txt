@@ -1,5 +1,4 @@
-I created this app for personal use and to learn about design patterns, clean code, unit testing, and GUI development...  
-Some code may appear irrelevant, unnecessary, undocumented, it's there for a reference purposes.
+I created this app for a personal use and to learn more about design patterns, clean code, unit testing, and GUI development.
 
 Developed On  
 Windows 10  
@@ -7,22 +6,53 @@ Python 3.11-12
 VS Code (Python extension only)
 
 
-####################################################################
-rtl layout
+# RTL Layout (using grid geometry manager)
+
+I am a back-end developer, so this was a new experience for me.
+
+1- Reorder the elements in the column from abc to cba
+To do this, we need to know the current column number of the element and the total number of columns in the row. 
+Then, we can use this formula new_col = col_size - (curr_col + 1) or (cs-cc-1).
+
+2- Float the elements in the column left-center-right [[l]  [c]  [r]]
+This is necessary when there is an extra space or when we need to position an element. 
+To create this effect, we need two frames.
+
+Parent frame: (sticky=tk.we) to occupy all the extra space and (weight=1) to pass it to the child frame, allowing it to expand.
+Child frame:
+[[left]                     ] sticky=tk.w
+[                    [right]] sticky=tk.e
+[          [center]         ] without sticky
 
 
+3- Labelframe
+4- Notebook
+5- Button
+6- Radiobutton
+7- Checkbutton
+You can find more information about localizing these widgets in the localize module.
 
 
+# MVC Architecture
 
+I see myself more as a software designer or architect, but it is hard to advance without real experiences.
 
+MVC is like this v___c___m
+But i did it like this
+v
+|
+c__m
 
-####################################################################
-mvc architecture
+Reasons:
+1- Every page is a frame with visual and behavioral logic combined into a single object. (i like this design)
+2- I had no exprince.
 
+Now, if I were to create a tkinter app again, I would do it like this. (or not!)
 
+v___c___m
+V contain all visual and front-end handler logic, with an instance of c passed by c.
+C contains back-end handler logic with an instance of v and m instantiated by c.
 
-
-
-
-
-
+Hmmm the only problem here is how to deal with v from the main code, for example:
+1- c.v.destroy() # (-show internal implementation)
+2- c.destroy() # using an interface (+hide internal/-more code)

@@ -47,7 +47,7 @@ Tested on Huawei 5G CPE H122-373 / H122-370
 
 5. Install the dependencies
    ```
-   pip install -r requirement.txt
+   pip install -r requirements.txt
    ```
 
 ## Usage (Windows)
@@ -78,7 +78,7 @@ On Ubuntu, you need to install python3-tk and python3-venv. Arabic text is not f
       source venv/bin/activate
       ```  
       ```
-      pip install -r requirement.txt
+      pip install -r requirements.txt
       ```  
       ```
       python3 main.py

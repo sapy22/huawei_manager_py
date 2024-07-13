@@ -267,12 +267,12 @@ class MonitorController(MonitorView):
 
     def update_conn_endc_info(self,data):
         try:
-            connectionstatus = data["ConnectionStatus"]
-            endcstatus = data["EndcStatus"]
-            signalicon = data["SignalIcon"]
-            signaliconnr = data["SignalIconNr"]
-            currentnetworktype = data["CurrentNetworkType"]
-            currentnetworktypeex = data["CurrentNetworkTypeEx"]
+            connectionstatus = data.get("ConnectionStatus"," ")
+            endcstatus = data.get("EndcStatus"," ")
+            signalicon = data.get("SignalIcon", "0")
+            signaliconnr = data.get("SignalIconNr", "0")
+            currentnetworktype = data.get("CurrentNetworkType"," ")
+            currentnetworktypeex = data.get("CurrentNetworkTypeEx"," ")
 
             #
             connection_status_dict = {"900":_("connecting"),"901":_("connected"),"902":_("disconnected"),"905":_("no connection"),"906":_("connection error")}
@@ -288,14 +288,17 @@ class MonitorController(MonitorView):
             self.current_network_type_ex_v.set(network_type_dict.get(currentnetworktypeex,currentnetworktypeex))
 
             # coloring
-            # conn
             if connectionstatus == "901":
                 self.conn_lbl_v["background"] = "lightgreen"
+            elif connectionstatus == " ":
+                pass
             else:
                 self.conn_lbl_v["background"] = "red"
-            # endc
+
             if endcstatus == "1":
                 self.endc_lbl_v["background"] = "lightgreen"
+            elif endcstatus == " ":
+                pass
             else:
                 self.endc_lbl_v["background"] = "red"
         except Exception as e:

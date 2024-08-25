@@ -45,7 +45,7 @@ c__m
 
 Reasons:
 1- Every page is a frame with visual and behavioral logic combined into a single object. (i like this design)
-2- I had no exprince.
+2- I had no experience.
 
 Now, if I were to create a tkinter app again, I would do it like this. (or not!)
 
@@ -56,3 +56,10 @@ C contains back-end handler logic with an instance of v and m instantiated by c.
 Hmmm the only problem here is how to deal with v from the main code, for example:
 1- c.v.destroy() # (-show internal implementation)
 2- c.destroy() # using an interface (+hide internal/-more code)
+
+# Update
+It seems there are differences between web apps and gui apps.
+The architecture i should have used is MVP (which i just learned).
+Now that i think about it, it makes sense that i didn't use a standard MVC.
+
+https://stackoverflow.com/questions/2056/what-are-mvp-and-mvc-and-what-is-the-difference

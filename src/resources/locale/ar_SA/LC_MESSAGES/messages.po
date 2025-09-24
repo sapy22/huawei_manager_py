@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 14:27+0300\n"
+"POT-Creation-Date: 2025-09-24 17:20+0200\n"
 "PO-Revision-Date: 2024-04-30 11:50+0300\n"
 "Last-Translator: \n"
 "Language: ar_SA\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.10.3\n"
 
 #: src/main/controller.py:111 src/main/navbar.py:41
 msgid "Settings"
@@ -221,15 +221,19 @@ msgstr "الإنجليزية"
 msgid "Arabic"
 msgstr "العربية"
 
-#: src/pages/settings/tabs/language/view.py:38
+#: src/pages/settings/tabs/language/view.py:33
+msgid "Polish"
+msgstr "البولندية"
+
+#: src/pages/settings/tabs/language/view.py:40
 msgid "Layout Direction"
 msgstr "اتجاه التخطيط"
 
-#: src/pages/settings/tabs/language/view.py:46
+#: src/pages/settings/tabs/language/view.py:48
 msgid "Left to Right"
 msgstr "اليسار إلى اليمين"
 
-#: src/pages/settings/tabs/language/view.py:48
+#: src/pages/settings/tabs/language/view.py:50
 msgid "Right to Left"
 msgstr "اليمين إلى اليسار"
 

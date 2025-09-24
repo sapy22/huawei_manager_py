@@ -30,6 +30,8 @@ class LanguageView(ttk.Frame):
         self.en_rd_btn.grid(row=0,column=0,**pad_option)
         self.ar_rd_btn = ttk.Radiobutton(continer_frm,text=_("Arabic"),variable=self.lang_v,value="ar_SA")
         self.ar_rd_btn.grid(row=0,column=1,**pad_option)
+        self.pl_rd_btn = ttk.Radiobutton(continer_frm,text=_("Polish"),variable=self.lang_v,value="pl")
+        self.pl_rd_btn.grid(row=0,column=2,**pad_option)
     
 
     def _setup_direction_widget(self):

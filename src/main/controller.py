@@ -35,8 +35,10 @@ class MainController(MainView):
     def setup_translation(self):
         en = gettext.translation("messages", localedir= resources_dir / "locale", languages=["en"])
         ar = gettext.translation("messages", localedir= resources_dir / "locale", languages=["ar_SA"])
+        pl = gettext.translation("messages", localedir= resources_dir / "locale", languages=["pl"])
         self.translation_dict["en"] = en
         self.translation_dict["ar_SA"] = ar
+        self.translation_dict["pl"] = pl
 
 
     def setup_nav_bar(self):

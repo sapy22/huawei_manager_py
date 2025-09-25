@@ -5,7 +5,8 @@ import enum
 
 LanguageDict = {
     "English":"en",
-    "Arabic":"ar_SA"
+    "Arabic":"ar_SA",
+    "Polish":"pl"
     }
 
 

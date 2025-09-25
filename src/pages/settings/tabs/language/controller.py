@@ -13,6 +13,7 @@ class LanguageController(LanguageView):
     def setup_event_handler(self):
         self.en_rd_btn.configure(command=self.on_lang_rd_btn_pressed)
         self.ar_rd_btn.configure(command=self.on_lang_rd_btn_pressed)
+        self.pl_rd_btn.configure(command=self.on_lang_rd_btn_pressed)
 
 
     # event handler
